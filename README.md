@@ -59,6 +59,7 @@ CREATE TABLE order_details (
 - **Category Count**: Identify  unique categories in the dataset.
   
 ### 3. Data Analysis & Findings
+
 1 **Identify the top 3 cities with the highest number of customers to determine key markets for targeted marketing and logistic optimization**.
 ```sql
 SELECT 
@@ -221,19 +222,25 @@ LIMIT 3;
 ```
 ## Findings
 
-###Engagement Depth Analysis : 
+### Engagement Depth Analysis : 
+
 1.As the Number of orders increases, the Customer count decreases. 
 2. Occasional Shoppers experiences the most 
-###Category-wise Customer Reach
+
+### Category-wise Customer Reach
 1.Electronics category needs more focus as it is in high demand among the customers
-###Sales Trend Analysis 
+
+### Sales Trend Analysis 
 1.As per Sales Trend Analysis the sales  month Feb 2024 experience the largest decline.
 2.sales trend from March to August Sales fluctuated with no clear trend.
-###month-on-month Trends
+
+### month-on-month Trends
 1.December month has the highest change in the average order value
-###Peak Sales Period Identification
+
+### Peak Sales Period Identification
 1.September and December months will require major restocking of product and increased staffs
-###Customer Acquisition Trends
+
+### Customer Acquisition Trends
 1.It is downward trend which implies the marketing campaign are not much effective.
 2.strategic action to improve the sales of these underperforming products is  Implement targeted marketing campaigns to raise awareness and interest. \
 
