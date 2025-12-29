@@ -18,5 +18,8 @@ e-commerce company databases to extract insights that drive business strategies 
 - A table named `products`  is created to store the roduct data.The table structure includes colums for product_id	name	category	price
 - A table named `orders`  is created to store the roduct data.The table structure includes colums for order_id	order_date	customer_id	total_amount
 - A table named `orderdetails`  is created to store the roduct data.The table structure includes colums for order_id	product_id	quantity	price_per_unit
+```sql
+CREATE DATABASE ecommerce;
+
 
 
