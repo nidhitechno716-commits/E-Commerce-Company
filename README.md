@@ -113,8 +113,6 @@ ORDER BY
 ```
 4.**For each product category, calculate the unique number of customers purchasing from it. This will help understand which categories have wider appeal across the customer base.**
 ```sql
-
-
 SELECT
     p.category,
     COUNT(DISTINCT o.customer_id) AS unique_customers
@@ -129,7 +127,7 @@ GROUP BY
 ORDER BY
     unique_customers DESC;
 ```
-5.**Analyze the month-on-month percentage change in total sales to identify growth trends. **
+5.**Analyze the month-on-month percentage change in total sales to identify growth trends**
 ```sql
 SELECT
     DATE_FORMAT(order_date, '%Y-%m') AS month,
@@ -171,7 +169,7 @@ GROUP BY product_id
 ORDER BY SalesFrequency DESC
 LIMIT 5;
 ```
-8.**List products purchased by less than 40% of the customer base, indicating potential mismatches between inventory and customer interest.**
+8.**List products purchased by less than 40% of the customer base, indicating potential mismatches between inventory and customer interest**
 ```sql
 WITH ProductCustomerCount AS (
     SELECT 
@@ -242,7 +240,7 @@ LIMIT 3;
 
 ### Customer Acquisition Trends
 1.It is downward trend which implies the marketing campaign are not much effective.
-2.strategic action to improve the sales of these underperforming products is  Implement targeted marketing campaigns to raise awareness and interest. \
+2.strategic action to improve the sales of these underperforming products is  Implement targeted marketing campaigns to raise awareness and interest.
 
 ## Conclusion
 
