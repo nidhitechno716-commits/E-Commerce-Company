@@ -72,7 +72,7 @@ ORDER BY
     number_of_customers DESC
 LIMIT 3;
 ```
-2 **Determine the distribution of customers by the number of orders placed. This insight will help in segmenting customers into one-time buyers, occasional shoppers, and regular customers for tailored marketing strategies.**
+2 **Determine the distribution of customers by the number of orders placed. This insight will help in segmenting customers into one-time buyers, occasional shoppers, and regular customers for tailored marketing strategies**
 ```sql
 SELECT 
     CASE
@@ -95,7 +95,7 @@ GROUP BY
 ORDER BY 
     numberOfOrders;
 ```
-3.**Identify products where the average purchase quantity per order is 2 but with a high total revenue, suggesting premium product trends. **
+3.**Identify products where the average purchase quantity per order is 2 but with a high total revenue, suggesting premium product trends.**
 ```sql
 SELECT
     product_id,
@@ -110,7 +110,7 @@ HAVING
 ORDER BY
     TotalRevenue DESC
 ```
-4.**For each product category, calculate the unique number of customers purchasing from it. This will help understand which categories have wider appeal across the customer base. **
+4.**For each product category, calculate the unique number of customers purchasing from it. This will help understand which categories have wider appeal across the customer base.**
 ```sql
 
 
@@ -170,7 +170,7 @@ GROUP BY product_id
 ORDER BY SalesFrequency DESC
 LIMIT 5;
 ```
-8.**List products purchased by less than 40% of the customer base, indicating potential mismatches between inventory and customer interest. **
+8.**List products purchased by less than 40% of the customer base, indicating potential mismatches between inventory and customer interest.**
 ```sql
 WITH ProductCustomerCount AS (
     SELECT 
