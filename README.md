@@ -5,10 +5,11 @@
 **Database**: `ecommerce`
 e-commerce company databases to extract insights that drive business strategies forward.analysis will inform various departments, from marketing to supply chain, providing them with actionable data to optimize our operations, enhance customer satisfaction, and boost our sales performance
 ## Objectives
-1. **Set up a retail sales database**: Create and populate a retail sales database with the provided sales data.
+1. **Set up a retail sales database**: Create and populate a ecommerce database with the provided customres,products,orders and order details data.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
+4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the  data.
+5. 
 ## Project Structure
 
 ### 1. Database Setup
