@@ -1,7 +1,7 @@
 # E-Commerce-Company
 
 ## Project Overview
-**Project Title**: E-Commerce Analysis    
+**Project Title**: E-Commerce Company Analysis    
 
 **Database**: `ecommerce`
 
