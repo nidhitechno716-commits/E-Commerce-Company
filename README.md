@@ -3,6 +3,7 @@
 ## Project Overview
 **Project Title**: E-Commerce Analysis    
 **Database**: `ecommerce`
+
 e-commerce company databases to extract insights that drive business strategies forward.analysis will inform various departments, from marketing to supply chain, providing them with actionable data to optimize our operations, enhance customer satisfaction, and boost our sales performance
 ## Objectives
 1. **Set up a retail sales database**: Create and populate a ecommerce database with the provided customres,products,orders and order details data.
