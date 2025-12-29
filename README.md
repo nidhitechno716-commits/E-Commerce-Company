@@ -20,6 +20,36 @@ e-commerce company databases to extract insights that drive business strategies 
 - A table named `orderdetails`  is created to store the roduct data.The table structure includes colums for order_id	product_id	quantity	price_per_unit
 ```sql
 CREATE DATABASE ecommerce;
-
-
+CREATE TABLE customers (
+    customer_id INT NOT NULL,
+    customer_name VARCHAR(45),
+    location VARCHAR(45),
+    PRIMARY KEY (customer_id)
+);
+CREATE TABLE products (
+    product_id INT NOT NULL,
+    product_name VARCHAR(45),
+    category VARCHAR(45),
+    price INT,
+    PRIMARY KEY (product_id)
+);
+CREATE TABLE orders (
+    order_id INT NOT NULL,
+    order_date DATE,
+    customer_id INT,
+    total_amount INT,
+    PRIMARY KEY (order_id),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+CREATE TABLE order_details (
+    order_detail_id INT NOT NULL AUTO_INCREMENT,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    price_per_unit INT,
+    PRIMARY KEY (order_detail_id),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+```
 
