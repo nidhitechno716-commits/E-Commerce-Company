@@ -52,4 +52,23 @@ CREATE TABLE order_details (
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
 ```
+### 2. Data Exploration & Cleaning
 
+- **products Count**: Determine the total number of products in the dataset.
+- **Customer Count**: Find out how many unique customers are in the dataset.
+- **Category Count**: Identify  unique categories in the dataset.
+  
+### 3. Data Analysis & Findings
+1 **Identify the top 3 cities with the highest number of customers to determine key markets for targeted marketing and logistic optimization **.
+```sql
+SELECT 
+    location,
+    COUNT(customer_id) AS number_of_customers
+FROM 
+    Customers
+GROUP BY 
+    location
+ORDER BY 
+    number_of_customers DESC
+LIMIT 3;
+```
