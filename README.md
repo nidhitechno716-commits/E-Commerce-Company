@@ -59,7 +59,7 @@ CREATE TABLE order_details (
 - **Category Count**: Identify  unique categories in the dataset.
   
 ### 3. Data Analysis & Findings
-1 **Identify the top 3 cities with the highest number of customers to determine key markets for targeted marketing and logistic optimization **.
+1 **Identify the top 3 cities with the highest number of customers to determine key markets for targeted marketing and logistic optimization**.
 ```sql
 SELECT 
     location,
